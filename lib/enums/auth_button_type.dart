@@ -1,0 +1,1 @@
+enum AuthButtonType { google, apple }

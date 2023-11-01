@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "flutter_stacked_boilerplate",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
