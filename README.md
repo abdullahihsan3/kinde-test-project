@@ -1,4 +1,4 @@
-# Flutter MVVM Starter
+# Kinde Flutter SDK Test Project
 
 Create scalable Flutter apps with MVVM architecture, state management & dependency injection using the [Stacked Flutter Framework](https://stacked.filledstacks.com/).
 
