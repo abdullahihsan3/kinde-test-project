@@ -56,7 +56,7 @@ class StartupViewModel extends BaseViewModel {
       await box.put('token', token);
       return token;
     } catch (e) {
-      debugPrint(e.toString());
+      debugPrint("Error: ${e.toString()}");
       _navigationService.navigateToLoginView();
     }
   }

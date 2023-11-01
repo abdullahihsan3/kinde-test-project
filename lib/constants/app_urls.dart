@@ -1,4 +1,3 @@
 class AppUrls {
-  static const String baseUrl = 'https://jsonplaceholder.typicode.com';
-  static const String postsUrl = '/posts';
+ static String baseUrl = 'https://api.unsplash.com';
 }

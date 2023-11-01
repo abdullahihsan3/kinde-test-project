@@ -1,3 +1,4 @@
+const String defaultImage = 'https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=1380&t=st=1698832516~exp=1698833116~hmac=b1c6203748ddb662520562857917c7fdb29f0b751521a1caec90568c66654514';
 const String defaultAssetImage ='';
 const String emptyEmailField = 'Email address cannot be empty';
 const String emptyTextField = 'Field cannot be empty!';
