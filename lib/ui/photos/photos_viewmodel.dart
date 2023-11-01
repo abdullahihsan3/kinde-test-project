@@ -107,6 +107,15 @@ class PhotosViewModel extends BaseViewModel {
     debugPrint(userOrganizations.toString());
   }
 
+  Future<void> getBISFlag() async{
+    final token = await sdk.getToken();
+    debugPrint(token);
+    debugPrint(sdk.getStringFlag(code: 'current-user-data'));
+    debugPrint(sdk.getBooleanFlag(code: 'boolean-flag').toString());
+    debugPrint(sdk.getIntegerFlag(code: 'int-flag').toString());
+    
+    }
+
   Future <Box> hiveEncryptedBox() async {
     var box = await Hive.openBox('myBox');
     return box;
