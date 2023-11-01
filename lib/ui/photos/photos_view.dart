@@ -1,7 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_stacked_starter/constants/app_strings.dart';
+import 'package:flutter_stacked_starter/constants/app_text.dart';
 import 'package:flutter_stacked_starter/ui/photos/photos_viewmodel.dart';
+import 'package:flutter_stacked_starter/ui/shared/ui_helpers.dart';
 import 'package:stacked/stacked.dart';
 
 class PhotosView extends StackedView<PhotosViewModel> {
@@ -18,6 +20,7 @@ class PhotosView extends StackedView<PhotosViewModel> {
       BuildContext context, PhotosViewModel viewModel, Widget? child) {
     return Scaffold(
         appBar: AppBar(
+          title: const Text('Random Photo',style: kManropeText,),
           backgroundColor: Colors.white,
           actions: [
             GestureDetector(
@@ -37,9 +40,19 @@ class PhotosView extends StackedView<PhotosViewModel> {
         body: RefreshIndicator(
             onRefresh: () => viewModel.init(),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+              verticalSpaceMedium,
+              Align(
+                alignment: Alignment.centerRight,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:15.0),
+                  child: ElevatedButton.icon(onPressed: (){
+                    viewModel.navigateToProfileDetails();
+                  }, icon: const Icon(Icons.person,color: Colors.white,), label: const Text("Profile Details",style: kManropeText,)),
+                ),
+              ),
+              verticalSpaceMedium,
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

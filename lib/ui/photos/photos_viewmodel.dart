@@ -33,4 +33,8 @@ class PhotosViewModel extends BaseViewModel {
      _photoModel = await runBusyFuture(_photosService.getRandomPhoto());
      rebuildUi();
   }
+
+  void navigateToProfileDetails() {
+    _navigationService.navigateToProfileView();
+  }
 }
