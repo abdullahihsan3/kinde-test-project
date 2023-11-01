@@ -28,7 +28,7 @@ Future<void> main() async {
     loginRedirectUri: dotenv.env['KINDE_LOGIN_REDIRECT_URI']!,
     logoutRedirectUri: dotenv.env['KINDE_LOGOUT_REDIRECT_URI']!,
     audience: dotenv.env['KINDE_AUDIENCE'],
-		scopes: ["email","profile","offline","openid"] 
+		scopes: ["email","profile","offline"] 
   );
   runApp(const MyApp());
 }
